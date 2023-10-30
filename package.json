@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "npm run build && next export -o _static"
   },
   "dependencies": {
     "eslint-config-next": "13.0.3",
